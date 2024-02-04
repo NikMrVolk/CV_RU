@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CV Zavadskiy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        screens: {
+                            '2md': '980px',
+                        },
+                        colors: {
+                            bgColor: '#d5d4ce',
+                            lineLightBrown: '#8a6a40',
+                            lineDarkBrown: '#6b4b20',
+                            textOnBrownBg: '#dec6ac',
+                        },
+                        spacing: {
+                            mainLayoutCalc: 'calc(50% - 35rem);',
+                        },
+                    },
+                },
+            }
+        </script>
+        <style>
+            body {
+                font-family: 'Roboto';
+            }
+        </style>
+    </head>
+    <body class="bg-bgColor text-lg">
+        <header class="h-52 mt-14 w-screen absolute top-0 z-10 bg-lineLightBrown hidden md:block">
+            <div
+                class="h-full before:block before:absolute before:ml-6 2md:before:ml-10 before:mr-20 2md:before:mr-40 before:inset-0 before:bg-lineDarkBrown before:-skew-x-6 2md:before:-skew-x-12"
+            ></div>
+        </header>
+        <div class="px-10 2md:px-20 xl:px-mainLayoutCalc hidden md:flex md:flex-row">
+            <aside
+                class="md:max-w-72 2md:max-w-80 text-textOnBrownBg bg-lineLightBrown flex flex-col items-center px-6 2md:px-8 gap-8 pt-10 min-h-screen pb-10"
+            >
+                <div class="h-60 w-60 rounded-full bg-lineDarkBrown relative z-20">
+                    <img
+                        src="images/photo.jpg"
+                        alt="photo"
+                        class="w-full h-full rounded-full p-1"
+                    />
+                </div>
+                <section class="flex flex-col gap-4 -mt-3">
+                    <h2 class="flex justify-center text-2xl">Контакты</h2>
+                    <ul class="self-start flex flex-col gap-2.5">
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/phone.svg" alt="phone" />
+                            </div>
+                            <div class="flex flex-col">
+                                +375 (25) 7780182 <span>(Telegram)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/mail.svg" alt="mail" />
+                            </div>
+                            <div>nickmozav@gmail.com</div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/github.svg" alt="github" />
+                            </div>
+                            <div>
+                                <a
+                                    href="https://github.com/NikMrVolk"
+                                    target="_blank"
+                                    class="underline"
+                                    >GitHub</a
+                                >
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/telegram.svg" alt="telegram" />
+                            </div>
+                            <div class="max-w-40">
+                                <a href="https://t.me/NickMozav" target="_blank" class="underline"
+                                    >Telegram</a
+                                >
+                                (желательно)
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/location.svg" alt="location" />
+                            </div>
+                            <a
+                                href="https://www.google.com/maps/place/Grodno"
+                                target="_blank"
+                                class="underline"
+                                >Гродно, Беларусь</a
+                            >
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/relocate.svg" alt="location" />
+                            </div>
+                            <div class="max-w-40">Готов к релокации на территории Беларуси</div>
+                        </li>
+                        <!-- <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/download.svg" alt="download" />
+                            </div>
+                            <a href="images/CV_Zavadskiy.pdf" download class="underline">
+                                Скачать PDF резюме
+                            </a>
+                        </li> -->
+                    </ul>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <h2
+                        class="border border-2 border-textOnBrownBg rounded-3xl flex justify-center py-2 text-lg"
+                    >
+                        Навыки
+                    </h2>
+                    <ul class="marker:textOnBrownBg list-disc pl-6 flex flex-col gap-2">
+                        <li>HTML</li>
+                        <li>CSS, SCSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS, CSS Modules, Styled Components</li>
+                        <li>React</li>
+                        <li>Next</li>
+                        <li>Zustand, TanStack Query, Redux, MobX</li>
+                        <li>Canvas</li>
+                        <li>Node JS (Express, Nest JS)</li>
+                        <li>Mongo DB, PostgreSQL</li>
+                        <li>Jest</li>
+                        <li>Git (GitHub, GitLab)</li>
+                    </ul>
+                </section>
+                <section class="flex flex-col gap-4 w-full">
+                    <h2
+                        class="border border-2 border-textOnBrownBg rounded-3xl flex justify-center py-2 text-lg"
+                    >
+                        Языки
+                    </h2>
+                    <ul class="marker:textOnBrownBg list-disc pl-6 flex flex-col gap-2">
+                        <li>Русский - Родной</li>
+                        <li>Английский - B1</li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="flex flex-col gap-8 pt-14 px-10 pb-10 grow">
+                <h1
+                    class="h-52 -ml-6 relative z-20 text-white text-5xl 2md:text-6xl font-bold flex flex-col justify-around"
+                >
+                    <span class="-ml-12 2md:-ml-10">Завадский</span>
+                    <span>Никита</span>
+                    <span
+                        class="block text-textOnBrownBg text-2xl 2md:text-3xl ml-5 2md:ml-10 font-normal"
+                        >Frontend React Developer</span
+                    >
+                </h1>
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center py-2"
+                    >
+                        Опыт
+                    </h2>
+                    <div class="opacity-60 flex flex-col gap-1">
+                        <span class="font-normal italic">01/2023 - 12/2023 (один год)</span>
+                        <div class="text-lg font-bold ml-2">
+                            <a href="https://arenavs.com/" target="_blank" class="underline"
+                                >Website Arena Games</a
+                            >
+                            |
+                            <a href="https://pl9.space/" target="_blank" class="underline"
+                                >pl9 Company</a
+                            >
+                        </div>
+                        <div>Frontend React Developer</div>
+                        <div>
+                            Веб-сайт компании, занимающейся разработкой мобильных игр, а также
+                            продажей NFT, связанных с данными играми
+                        </div>
+                        <ul class="marker:textOnBrownBg list-disc pl-5">
+                            <span class="font-bold -ml-2">Мои обязанности на проете включали:</span>
+                            <li>
+                                разработка новых и переработка старых страниц по созданным макетам
+                                дизайнера
+                            </li>
+                            <li>реализация нового функционала на страницы сайта</li>
+                            <li>
+                                работа по устранению недостатков, обнаруженных на стадии
+                                тестирования в соответствии сайта макету, а также работоспособности
+                                созданого функционала
+                            </li>
+                            <li>реализация решений по внедрению анимации на страницы сайта</li>
+                        </ul>
+                        <div>
+                            <span class="font-bold ml-2">Технологии:</span>
+                            <div>
+                                TypeScript, Next JS (pages router), Tailwind CSS, Zustand, React
+                                Query, GitLab
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center py-2"
+                    >
+                        Pet-проекты
+                    </h2>
+                    <div class="opacity-60 flex flex-col gap-1">
+                        <span class="italic"> 12/2023 - настоящее время </span>
+                        <div class="text-lg ml-2 flex items-center gap-2">
+                            <span class="font-bold">Панель управления цифровыми финансами</span>
+                            <div class="text-base font-normal">
+                                <a
+                                    href="https://github.com/NikMrVolk/digital-finance-dashboard"
+                                    target="_blank"
+                                    class="flex items-center underline gap-1"
+                                >
+                                    <img src="images/icons/github.svg" alt="github" />
+                                    Github Ссылка
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            Сайт для работы с финансовым кошельком, отслеживания роста и падения
+                            стоимости акций, а также их покупки
+                        </div>
+                        <div>
+                            <span class="font-bold ml-2">Технологии:</span>
+                            <div>
+                                Frontend - TypeScript, Next JS (app router), Tailwind CSS, TanStack
+                                Query
+                            </div>
+                            <div>Backend - Nest JS, PostgreSQL, Prisma</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <h2
+                        class="text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center py-2"
+                    >
+                        Образование
+                    </h2>
+                    <div class="opacity-60">
+                        <span class="italic">10/2022 - 01/2024</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Sky Pro Web-разработчик
+                            <div class="text-base font-normal">
+                                <a
+                                    href="https://sky.pro/courses/programming/web-developer"
+                                    target="_blank"
+                                    class="flex items-center underline gap-1"
+                                >
+                                    <img src="images/icons/telegram.svg" alt="website" />
+                                    Ссыдка на сайт
+                                </a>
+                            </div>
+                        </div>
+                        <div class="font-bold ml-2">Технологии:</div>
+                        <div>
+                            HTML, CSS, CSS Modules, Styled Components, JavaScript, TypeScript,
+                            React, Redux, Express, MongoDB
+                        </div>
+                    </div>
+                    <div class="opacity-60">
+                        <span class="italic">11/2021 - настоящее время</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Самообразование
+                        </div>
+                        <div>
+                            YouTube, Udemy курсы и интенсивы (HTML, CSS, JavaScript,
+                            Typescript, React, Next, Git)
+                        </div>
+                    </div>
+                    <div class="opacity-60">
+                        <span class="italic">07/2017 - 07/2021</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Академия Министерства внутренних дел Республики Беларусь
+                        </div>
+                        <div>
+                            С отличием закончен бакалавриат следственно-экспертного факультета,
+                            правоведение
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center py-2"
+                    >
+                        Обо мне
+                    </h2>
+                    <p class="opacity-60">
+                        Мне 23 года, искренне увлечён программированием, в частности создание
+                        качественных и удобных пользовательских интерфейсов. Готов работать в
+                        команде и всегда ориентируюсь на успешный результат в том числе в условиях
+                        большой загруженности.
+                    </p>
+                </section>
+            </main>
+        </div>
+        <div class="flex flex-col items-center gap-10 md:hidden py-10 px-6">
+            <header class="h-52 mt-14 w-screen absolute top-0 z-10 bg-lineLightBrown">
+                <div
+                    class="h-full before:block before:absolute before:mx-6 before:inset-0 before:bg-lineDarkBrown before:-skew-x-12"
+                ></div>
+            </header>
+
+            <div class="w-full flex justify-around relative z-20">
+                <div class="h-60 w-60 rounded-full bg-lineLightBrown">
+                    <img
+                        src="images/photo.jpg"
+                        alt="photo"
+                        class="w-full h-full rounded-full p-1"
+                    />
+                </div>
+                <h2
+                    class="relative z-20 text-3xl font-bold hidden sm:flex flex-col justify-center text-lineLightBrown"
+                >
+                    <span class="text-white text-center">Завадский Никита</span>
+                    <span class="block text-xl ml-5 2md:ml-10 font-normal text-textOnBrownBg">
+                        Frontend React Developer
+                    </span>
+                </h2>
+            </div>
+            <h2
+                class="relative z-20 text-4xl font-bold flex flex-col items-center justify-center text-lineLightBrown sm:hidden"
+            >
+                <span class="text-center">Завадский Никита</span>
+                <span class="block text-xl ml-5 2md:ml-10 font-normal">
+                    Frontend React Developer
+                </span>
+            </h2>
+            <div class="flex justify-center gap-4 flex-wrap w-full">
+                <section
+                    class="flex flex-col gap-4 bg-lineLightBrown rounded-2xl py-6 px-8 text-textOnBrownBg w-72"
+                >
+                    <h2 class="flex justify-center text-2xl">Контакты</h2>
+                    <ul class="self-start flex flex-col gap-2.5">
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/phone.svg" alt="phone" />
+                            </div>
+                            <div class="flex flex-col">
+                                +375 (25) 7780182 <span>(Telegram)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/mail.svg" alt="mail" />
+                            </div>
+                            <div>nickmozav@gmail.com</div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/github.svg" alt="github" />
+                            </div>
+                            <div>
+                                <a
+                                    href="https://github.com/NikMrVolk"
+                                    target="_blank"
+                                    class="underline"
+                                    >GitHub</a
+                                >
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/telegram.svg" alt="telegram" />
+                            </div>
+                            <div>
+                                <a href="https://t.me/NickMozav" target="_blank" class="underline"
+                                    >Telegram</a
+                                >
+                                (предпочтительно)
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/location.svg" alt="location" />
+                            </div>
+                            <a
+                                href="https://www.google.com/maps/place/Grodno"
+                                target="_blank"
+                                class="underline"
+                                >Гродно, Беларусь</a
+                            >
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/relocate.svg" alt="location" />
+                            </div>
+                            <div class="max-w-40">Готов к релокации на территории Беларуси</div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="h-9 w-9 bg-white rounded-full flex justify-center items-center"
+                            >
+                                <img src="images/icons/download.svg" alt="download" />
+                            </div>
+                            <a href="images/CV_Zavadskiy.pdf" download class="underline">
+                                Скачать PDF резюме
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section
+                    class="flex flex-col gap-4 bg-lineLightBrown rounded-2xl py-6 px-8 text-textOnBrownBg w-72"
+                >
+                    <h2 class="flex justify-center text-2xl">Навыки</h2>
+                    <ul class="marker:textOnBrownBg list-disc pl-6 flex flex-col gap-2">
+                        <li>HTML</li>
+                        <li>CSS, SCSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS, CSS Modules, Styled Components</li>
+                        <li>React</li>
+                        <li>Next</li>
+                        <li>Zustand, TanStack Query, Redux, MobX</li>
+                        <li>Canvas</li>
+                        <li>Node JS (Express, Nest JS)</li>
+                        <li>Mongo DB, PostgreSQL</li>
+                        <li>Jest</li>
+                        <li>Git (GitHub, GitLab)</li>
+                    </ul>
+                </section>
+                <section
+                    class="flex flex-col gap-4 bg-lineLightBrown rounded-2xl py-6 px-8 text-textOnBrownBg w-72"
+                >
+                    <h2 class="flex justify-center text-2xl">Языки</h2>
+                    <ul class="marker:textOnBrownBg list-disc pl-6 flex flex-col gap-2">
+                        <li>Русский - Родной</li>
+                        <li>Английский - B1</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="flex flex-col gap-8 px-10 grow">
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="self-center text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center p-2 w-80"
+                    >
+                        Опыт
+                    </h2>
+                    <div class="opacity-60 flex flex-col gap-1">
+                        <span class="font-normal italic">01/2023 - 12/2023 (один год)</span>
+                        <div class="text-lg font-bold ml-2">
+                            <a href="https://arenavs.com/" target="_blank" class="underline"
+                                >Website Arena Games</a
+                            >
+                            |
+                            <a href="https://pl9.space/" target="_blank" class="underline"
+                                >pl9 Company</a
+                            >
+                        </div>
+                        <div>Frontend React Developer</div>
+                        <div>
+                            Веб-сайт компании, занимающейся разработкой мобильных игр, а также
+                            продажей NFT, связанных с данными играми
+                        </div>
+                        <ul class="marker:textOnBrownBg list-disc pl-5">
+                            <span class="font-bold -ml-2"
+                                >Мои обязанности на проекте включали:</span
+                            >
+                            <li>
+                                разработка новых и переработка старых страниц по созданным макетам
+                            </li>
+                            <li>реализация нового функционала на страницы сайта</li>
+                            <li>
+                                работа по устранению недостатков, обнаруженных на стадии
+                                тестирования в соответствии сайта макету, а также работоспособности
+                                созданого функционала
+                            </li>
+                            <li>реализация решений по внедрению анимации на страницы сайта</li>
+                        </ul>
+                        <div>
+                            <span class="font-bold ml-2">Технологии:</span>
+                            <div>
+                                TypeScript, Next JS (pages router), Tailwind CSS, Zustand, React
+                                Query, GitLab
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="self-center text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center p-2 w-80"
+                    >
+                        Pet-проекты
+                    </h2>
+                    <div class="opacity-60 flex flex-col gap-1">
+                        <span class="italic"> 12/2023 - настоящее время </span>
+                        <div class="text-lg ml-2 flex items-center gap-2">
+                            <span class="font-bold">Панель управления цифровыми финансами</span>
+                            <div class="text-base font-normal">
+                                <a
+                                    href="https://github.com/NikMrVolk/digital-finance-dashboard"
+                                    target="_blank"
+                                    class="flex items-center underline gap-1"
+                                >
+                                    <img src="images/icons/github.svg" alt="github" />
+                                    Github Ссылка
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            Сайт для работы с финансовым кошельком, отслеживания роста и падения
+                            стоимости акций, а также их покупки.
+                        </div>
+                        <div>
+                            <span class="font-bold ml-2">Технологии:</span>
+                            <div>
+                                Frontend - TypeScript, Next JS (app router), Tailwind CSS, TanStack
+                                Query
+                            </div>
+                            <div>Backend - Nest JS, PostgreSQL, Prisma</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <h2
+                        class="self-center text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center p-2 w-80"
+                    >
+                        Образование
+                    </h2>
+                    <div class="opacity-60">
+                        <span class="italic">10/2022 - 01/2024</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Sky Pro Web-разработчик
+                            <div class="text-base font-normal">
+                                <a
+                                    href="https://sky.pro/courses/programming/web-developer"
+                                    target="_blank"
+                                    class="flex items-center underline gap-1"
+                                >
+                                    <img src="images/icons/telegram.svg" alt="website" />
+                                    Ссылка на сайт
+                                </a>
+                            </div>
+                        </div>
+                        <div class="font-bold ml-2">Технологии:</div>
+                        <div>
+                            HTML, CSS, CSS Modules, Styled Components, JavaScript, TypeScript,
+                            React, Redux, Express, MongoDB
+                        </div>
+                    </div>
+                    <div class="opacity-60">
+                        <span class="italic">11/2021 - настоящее время</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Самообразование
+                        </div>
+                        <div>
+                            YouTube, Udemy курсы и интенсивы (HTML, CSS, JavaScript, Typescript,
+                            React, Next, Git)
+                        </div>
+                    </div>
+                    <div class="opacity-60">
+                        <span class="italic">07/2017 - 07/2021</span>
+                        <div class="text-lg font-bold ml-2 flex items-center gap-2">
+                            Академия Министерства внутренних дел Республики Беларусь
+                        </div>
+                        <div>
+                            С отличием закончен бакалавриат следственно-экспертного факультета,
+                            правоведение
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-2">
+                    <h2
+                        class="self-center text-lg bg-lineLightBrown text-textOnBrownBg max-w-60 rounded-3xl flex justify-center p-2 w-80"
+                    >
+                        Обо мне
+                    </h2>
+                    <p class="opacity-60">
+                        Мне 23 года, искренне увлечён программированием, в частности создание
+                        качественных и удобных пользовательских интерфейсов. Готов работать в
+                        команде и всегда ориентируюсь на успешный результат в том числе в условиях
+                        большой загруженности
+                    </p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
